@@ -91,18 +91,7 @@ gsap.from("h3", {
 });
 
 
-gsap.from("#contwo #box", {
-  y: 100,
-  delay: 1,
-  duration: 1,
-  opacity: 0,
-  ease: "power4",
-  stagger: 0.9,
-  scrollTrigger: {
-    trigger: "#contwo #box",
-    start: "top 100%", // start when the top of #hdtwo is at 80% of the viewport height
-  },
-});
+
 
 
 
