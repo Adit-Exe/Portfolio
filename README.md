@@ -10,7 +10,7 @@ Click [here](https://adit-exe.github.io/Portfolio/)
 - JavaScript
 - HTML/CSS
 ## Things I do/know
-- Music production/composition
-- Video Editing
+- [Music production/composition](https://www.instagram.com/ample_.music/)
+- [Video Editing](https://adit-exe.github.io/Portfolio/scnd.html)
 - Photo Editing/Graphics Design 
 - Coding
