@@ -23,6 +23,12 @@ gsap.from("#right h3", {
   ease: "power4",
 })
 
+gsap.from("#coninfo", {
+  duration: 1,
+  delay: 4,
+  opacity: 0,
+  ease: "power4",
+})
 
 gsap.from('#hdone', {
   delay: 3.5,
