@@ -64,6 +64,22 @@ body {
         margin-top: 10px;
 
 
+        #coninfo {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background-color: white;
+            width: fit-content;
+            box-shadow: 0px 0px 50px rgba(168, 168, 205, 0.607);
+            padding: 10px 25px 10px 25px;
+            border-radius: 30px;
+            margin-top: 10px;
+
+            i {
+                font-size: 2rem;
+            }
+        }
+
     }
 }
 
@@ -97,6 +113,7 @@ body {
             border-radius: 10px;
             padding: 2px;
             height: fit-content;
+
             img {
                 width: 300PX;
                 border-radius: 10px;
@@ -122,10 +139,11 @@ body {
             flex-direction: column;
             gap: 10px;
             margin-top: 10px;
-            
-            p{
+
+            p {
                 text-wrap: warp;
             }
+
             h3 {
                 font-size: 3rem;
             }
@@ -208,7 +226,13 @@ video {
 
         #right {
             font-size: small;
+
+             #coninfo {
+            padding: 10px 20px 10px 20px;
         }
+        }
+
+       
     }
 
     #dtl {
@@ -222,7 +246,7 @@ video {
         #box {
             #left {
                 img {
-                    width: 180px;
+                    width: 150px;
                 }
             }
 
