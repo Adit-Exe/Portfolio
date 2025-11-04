@@ -1,37 +1,122 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    margin: 0px;
-
 }
 
 body {
-    background-color: rgb(248, 248, 255);
-display: flex;
-flex-direction: column;
-align-items: center;
+    background: #ebebeb;
+    color: rgb(0, 0, 0);
+    margin-bottom: 200px;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#hero #in {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+#hero #tro {
+    border-radius: 10px;
+    background: #ebebeb;
+    box-shadow: 20px 20px 60px #c8c8c8, -20px -20px 60px #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+
+    #coninfo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 5px;
+
+
+
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+
+#hero #in h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+#hero img {
+    height: 250px;
+    width: auto;
+    max-width: 42%;
+}
+
+#sec2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#sec2 h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#sec2 #ski {
+    border-radius: 10px;
+    background: #ebebeb;
+    box-shadow: 20px 20px 60px #c8c8c8, -20px -20px 60px #ffffff;
+    padding: 20px;
+    height: fit-content;
+    width: fit-content;
+}
+
+#sec2 #cnvrs {
+    border-radius: 10px;
+    background: #ebebeb;
+    box-shadow: 20px 20px 60px #c8c8c8, -20px -20px 60px #ffffff;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sec2 #cnvrs p {
+    padding-left: 20px;
+    text-wrap: warp;
 }
 
 img {
-    width: 150px;
-    border: 4px solid rgb(241, 241, 241);
-    border-radius: 20px;
+    width: 140px;
+    border-radius: 15px;
 }
 
 .box {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 50px rgba(168, 168, 205, 0.607);
-    border-radius: 15px;
-    margin: 0px 50px 0px 50px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #fbfbfb, #d4d4d4);
+    box-shadow: 20px 20px 60px #c8c8c8, -20px -20px 60px #ffffff;
     width: 500px;
     padding: 20px;
     gap: 20px;
     display: flex;
+        transition: all 0.5s ease-out;
+
+
+
 
     h2 {
-        margin-bottom: 10px;
+        margin: 0px;
     }
 }
+.box:hover{
+  transform: scale(1.05);
+
+}
+
+
 
 .con {
     display: flex;
@@ -43,31 +128,122 @@ img {
 
 .tak {
     display: flex;
-    justify-content: center;
+    justify-self: center;
     gap: 40px;
     border-radius: 15px;
     padding: 30px;
+    width: fit-content;
     max-width: 500px;
     margin-bottom: 100px;
     margin-top: 100px;
     font-size: 2rem;
-    
-    i{
-        color: black;
-        position: relative;
-        transition: all 0.3s ease-out;
-    }
+}
 
-    i:hover{
-        transform: scale(1.1);
-    }
+.tak i {
+    color: black;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.tak i:hover {
+    transform: scale(1.1);
+}
+
+#techbox {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 
 }
 
-@media (max-width: 760px) {
+
+
+
+.techbox {
+    border-radius: 10px;
+    background: #ebebeb;
+    box-shadow: 20px 20px 60px #c8c8c8, -20px -20px 60px #ffffff;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+}
+
+.techbox:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.techbox h2 {
+    margin-bottom: 0px;
+}
+
+/* Responsive tweaks and fixes */
+/* Ensure predictable sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1000px) {
+
+    /* Stack hero content on narrower screens */
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    #hero #in {
+        width: 500px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    #hero #in h1 {
+        font-size: 3rem;
+    }
+
+    #hero #tro {
+        padding: 20px;
+        font-size: 0.95rem;
+    }
+
+    #hero img {
+        max-width: 10rem;
+        height: auto;
+    }
+
+    /* Section 2 layout becomes vertical */
+    #sec2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding: 10px 20px;
+    }
+
+    #sec2 #ski,
+    #sec2 #cnvrs {
+        width: 100%;
+        width: fit-content;
+    }
+
+    /* Portfolio cards should shrink and stack */
+    .con {
+        padding: 0 12px;
+        gap: 30px;
+    }
 
     .box {
-        width: 300px;
+        width: 400px;
 
         h2 {
             font-size: 1.3rem;
@@ -78,9 +254,96 @@ img {
         }
 
         img {
-            width: 80px;
+            width: 90px;
             border: 3px solid rgb(241, 241, 241);
+        }
+
+
+        .box img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        /* Tech icons wrap and scale */
+        #techbox {
+            margin-top: 40px;
+            gap: 12px;
+            padding: 0 12px 30px;
+
+        }
+
+
+
+        /* Social icons row becomes responsive */
+        .tak {
+            width: 100%;
+            max-width: 900px;
+            justify-content: center;
+            padding: 20px;
+            font-size: 1.6rem;
+            flex-wrap: wrap;
+            gap: 18px;
         }
     }
 
+    @media (max-width: 480px) {
+
+        #hero #in {
+            width: 95%;
+        }
+
+        #hero #in h1 {
+            font-size: 2.2rem;
+        }
+
+        #hero #tro {
+            font-size: 0.95rem;
+            padding: 14px;
+        }
+
+        #hero #tro #coninfo {
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sec2 {
+            gap: 60px;
+        }
+
+        .box {
+            width: 95%;
+            padding: 15px;
+
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            img {
+                width: 80px;
+                border: 3px solid rgb(241, 241, 241);
+            }
+
+
+            .techbox {
+                min-width: 48px;
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+
+            .tak {
+                font-size: 1.4rem;
+                padding: 12px;
+                gap: 12px;
+            }
+
+            img {
+                width: 80px;
+            }
+        }
+    }
 }
