@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // ===== Animate Each Box, Techbox, and Icon Individually =====
-  const animEls = document.querySelectorAll("#sec2, #sec3 .box, #techbox .techbox, .tak a");
+  const animEls = document.querySelectorAll("#sec2, #sec3 .box, #techbox .techbox, .tak a, #app");
 
   animEls.forEach(el => {
     gsap.from(el, {
