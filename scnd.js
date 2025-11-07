@@ -51,6 +51,7 @@ gsap.from('#dtl', {
 
 
 
+
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,12 +102,12 @@ gsap.from("h3", {
 
 
 
-  gsap.from('#hdthree', {
+gsap.from('#hdthree', {
   y: 100,
   duration: 1,
   opacity: 0,
   ease: "power4",
- scrollTrigger: {
+  scrollTrigger: {
     trigger: ".scroll-wrapper .pic",
     start: "top 100%", // start when the top of #hdtwo is at 80% of the viewport height
   },
