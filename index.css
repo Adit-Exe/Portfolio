@@ -246,9 +246,14 @@ img {
     }
 
     #sec2 #ski,
-    #sec2 #cnvrs {
-        width: 100%;
-        width: fit-content;
+    #sec2 {
+        #cnvrs {
+            width: 100%;
+            width: fit-content;
+            background: #ebebeb00;
+            box-shadow: 20px 20px 60px #c8c8c800, -20px -20px 60px #ffffff00;
+            padding: 0px;
+        }
     }
 
     /* Portfolio cards should shrink and stack */
