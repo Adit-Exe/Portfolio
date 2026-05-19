@@ -45,6 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
         autoAlpha: 0,
         duration: 1,
         delay: 0.5,
+        stagger: 0.2,
         ease: "power4.out"
     });
 
