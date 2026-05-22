@@ -4,28 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remind</title>
+    <title>Remind App Concept</title>
     <link rel="stylesheet" href="remind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
-        integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
     <div id="container">
         <img src="remind.png" alt="">
-        <h1>Remind</h1>
-        <p>A simple and intuitive app designed to help users manage their tasks</p>
-        <div class="action-buttons">
-            <a href="Remind.apk" download class="download-btn"><i class="fa-solid fa-download"></i>Download</a>
-            <a href="https://github.com/Adit-Exe/Remind" target="_blank" class="download-btn"><i
-                    class="fa-brands fa-github"></i>GitHub</a>
-        </div>
+        <h1>Remind App Concept</h1>
+        <p>Remind is a simple and intuitive app designed to help users manage their tasks</p>
+        <button><i class="fa-solid fa-download"></i>Download</button>
     </div>
 
     <div id="features">
@@ -35,6 +26,19 @@
             <li><strong>Dynamic Sorting:</strong> Timers are automatically sorted by proximity to completion—the most
                 urgent timers always appear at the top.</li>
             <li><strong>Live UI:</strong> Real-time progress bars and countdowns that update every second.</li>
+
+            <li><strong>Glassmorphism Widget:</strong>
+                <ul>
+                    <li>Beautiful translucent design with a subtle border.</li>
+                    <li>Live Updates: Updates every second directly on your home screen.</li>
+                    <li><li><strong>Responsive Layouts:</strong></li>
+                        <ul>
+                            <li>Compact Mode: Shows only progress bars when resized to small heights.</li>
+                            <li>Title Mode: Shows Title and Progress Bar when resized to small widths.</li>
+                            <li>Full Mode: Shows Title, Progress Bar, and Remaining Time.</li>
+                        </ul>   
+                </ul>
+
             <li><strong>Milestone Notifications:</strong>
                 <ul>
                     <li>50% Completed: High-priority alert when half the time is gone.</li>
@@ -54,7 +58,6 @@
                 timers are never lost, even after a device reboot.</li>
         </ul>
     </div>
-    <script src="remind.js"></script>
 </body>
 
 </html>
