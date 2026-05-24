@@ -53,10 +53,24 @@ button,
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
     i {
         background-color: transparent;
     }
+}
+
+button:hover,
+.download-btn:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:active,
+.download-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
 }
 
 #features {
