@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpendBook</title>
+    <meta name="description"
+        content="SpendBook is a lightweight personal expense tracking app built with Flutter. Record, organize, and visualize your daily spending with beautiful charts and effortless data management." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="spendbook.png" type="image/png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-brand">
+                <img src="spendbook.png" alt="SpendBook Icon" />
+                <span>SpendBook</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#showcase">Screenshots</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-bolt"></i>
+                    Built with Flutter
+                </div>
+                <h1 class="hero-title">
+                    Track your spending,<br /><span>effortlessly.</span>
+                </h1>
+                <p class="hero-desc">
+                    SpendBook is a simple, intuitive personal expense tracker that helps you record,
+                    organize, and understand where your money goes — every single day.
+                </p>
+                <div class="hero-actions">
+                    <a href="SpendBook.apk" download="SpendBook.apk" class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i>
+                        Download
+                    </a>
+                    <a href="https://github.com/Adit-Exe/SpendBook" class="btn btn-secondary">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-icon-wrapper">
+                    <a href="spendbook.json">
+                        <img src="spendbook.png" alt="SpendBook App Icon" style="border-radius: 40%;" />
+                    </a>
+                    <div class="hero-float hero-float--1"></div>
+                    <div class="hero-float hero-float--2"></div>
+                    <div class="hero-float hero-float--3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-header">
+                <div class="section-label">
+                    <i class="fa-solid fa-sparkles"></i>
+                    Features
+                </div>
+                <h2 class="section-title">Everything you need,<br />nothing you don't.</h2>
+                <p class="section-subtitle">
+                    SpendBook keeps expense management fast, clear, and effortless — without unnecessary complexity.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h3>Smart Categories</h3>
+                    <p>
+                        Choose from built-in categories like Travel, Food, Subscription, Electricity, and more — or
+                        create your own on the fly.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>Auto-Combine Entries</h3>
+                    <p>
+                        Multiple payments in the same category on the same day are automatically merged into a single
+                        record. No duplicates, ever.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3>Visual Analytics</h3>
+                    <p>
+                        Interactive pie charts, line graphs, and bar charts help you understand spending trends at a
+                        glance — daily, weekly, or monthly.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h3>Automatic Date Tracking</h3>
+                    <p>
+                        Every payment is automatically tagged with the current date — no manual date selection needed.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <h3>Excel Import & Export</h3>
+                    <p>
+                        Back up your data to .xlsx files or restore from a previous export. Data validation ensures file
+                        integrity during import.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>Adaptive Theming</h3>
+                    <p>
+                        SpendBook follows your device's primary color to create a personalized look with dynamic chart
+                        shading.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SCREENSHOTS SHOWCASE ===== -->
+    <section class="showcase" id="showcase">
+        <div class="container">
+            <div class="showcase-header">
+                <div class="section-label">
+                    <i class="fa-solid fa-image"></i>
+                    Screenshots
+                </div>
+                <h2 class="section-title">See SpendBook in action.</h2>
+                <p class="section-subtitle">
+                    From quick payment entry to detailed visual analytics — here's what the experience looks like.
+                </p>
+            </div>
+
+            <div class="showcase-tabs">
+                <button class="showcase-tab active" data-filter="all">All</button>
+                <button class="showcase-tab" data-filter="charts">Charts</button>
+                <button class="showcase-tab" data-filter="data">Data & Filters</button>
+            </div>
+
+            <div class="showcase-gallery">
+                <!-- Pie Chart -->
+                <div class="showcase-item" data-category="charts">
+                    <img src="pie chart.png" alt="Pie chart showing category-wise expense distribution" />
+                    <div class="showcase-item-overlay">
+                        <h4>Category Distribution</h4>
+                        <p>See how your spending splits across different categories with an interactive pie chart.</p>
+                    </div>
+                </div>
+
+                <!-- Line Graph -->
+                <div class="showcase-item" data-category="charts">
+                    <img src="line graph.png" alt="Line graph showing spending trends over time" />
+                    <div class="showcase-item-overlay">
+                        <h4>Spending Trends</h4>
+                        <p>Track your expenses over time with day, week, and month views using interactive line charts.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stacked Bar Graph -->
+                <div class="showcase-item" data-category="charts">
+                    <img src="staked bar graph.png" alt="Stacked bar graph showing daily expenses" />
+                    <div class="showcase-item-overlay">
+                        <h4>Daily Breakdown</h4>
+                        <p>Visualize daily spending with stacked bars — each segment represents a different category.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Date Selector -->
+                <div class="showcase-item" data-category="data">
+                    <img src="select date.png" alt="Date range selector with quick filter buttons" />
+                    <div class="showcase-item-overlay">
+                        <h4>Custom Date Range</h4>
+                        <p>Choose specific date ranges or use quick filters like Today, This Week, or This Month.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="how-header">
+                <div class="section-label">
+                    <i class="fa-solid fa-route"></i>
+                    How It Works
+                </div>
+                <h2 class="section-title">Three simple steps.</h2>
+                <p class="section-subtitle">
+                    SpendBook is designed around a two-screen experience — fast to enter, easy to understand.
+                </p>
+            </div>
+
+            <div class="how-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Enter a Payment</h3>
+                    <p>Select or type a category, enter the amount, and you're done. The date is handled automatically.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>View Your Analytics</h3>
+                    <p>Swipe to the analytics screen to see interactive charts, category totals, percentages, and
+                        trends.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Export & Backup</h3>
+                    <p>Export your data to Excel anytime. Import it back on a new device with full validation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="section-label">
+                    <i class="fa-solid fa-info-circle"></i>
+                    About SpendBook
+                </div>
+                <h2 class="section-title">Built around one goal.</h2>
+                <p class="section-subtitle">
+                    Making expense tracking simple enough to use every day while providing enough visual information
+                    to understand where your money is going. SpendBook stores records locally with SQLite, keeps
+                    navigation gesture-based, and adapts its look to match your device.
+                </p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">SQLite / sqflite</span>
+                    <span class="tech-tag">FL Chart</span>
+                    <span class="tech-tag">Excel (.xlsx)</span>
+                    <span class="tech-tag">Material Design</span>
+                    <span class="tech-tag">Adaptive Theming</span>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span class="stat-value">2</span>
+                    <span class="stat-label">Screens</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-tags"></i>
+                    <span class="stat-value">8+</span>
+                    <span class="stat-label">Built-in Categories</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span class="stat-value">3</span>
+                    <span class="stat-label">Chart Types</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-hand-pointer"></i>
+                    <span class="stat-value">Swipe</span>
+                    <span class="stat-label">Gesture Navigation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Main Script -->
+    <script src="index.js"></script>
+</body>
+
+</html>
