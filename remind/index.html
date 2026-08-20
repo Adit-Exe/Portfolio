@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remind App</title>
+    <link rel="stylesheet" href="remind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="icon" href="remind.png" type="image/png" />
+</head>
+
+<body>
+    <img id="rec" src="remindrec.jpg" alt="">
+    <img id="sqr" src="remindsqr.jpg" alt="">
+
+    <div id="container">
+        <a href="remind.json">
+            <img src="app_icon.png" alt="">
+        </a>
+        <h1>Remind</h1>
+        <p>I used to forget about my work/things so I build this <strong>Technically a timer app </strong><br>Set a date
+            & time and it will show a progressbar from present date/time <br><strong>Very simple & very usefull</strong>
+            with notification update & widget support
+        </p>
+        <div class="action-buttons">
+            <a href="Remind.apk" download="Remind.apk" class="download-btn">
+                <i class="fa-solid fa-download"></i>Download
+            </a>
+            <a href="https://github.com/Adit-Exe/Remind" target="_blank" rel="noopener noreferrer" class="download-btn">
+                <i class="fa-brands fa-github"></i>GitHub
+            </a>
+        </div>
+    </div>
+
+    <div id="icon">
+        <img src="kotlin.png" alt="">
+        <img src="jetcomp.png" alt="">
+    </div>
+
+    <div id="ad">
+        <img src="ad2.jpg" alt="">
+        <img src="ad1.jpg" alt="">
+    </div>
+
+    <div id="features">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Unlimited Timers:</strong> Create and manage multiple timers simultaneously.</li>
+            <li><strong>Dynamic Sorting:</strong> Timers are automatically sorted by proximity to completion—the most
+                urgent timers always appear at the top.</li>
+            <li><strong>Live UI:</strong> Real-time progress bars and countdowns that update every second.</li>
+
+            <li><strong>Glassmorphism Widget:</strong>
+                <ul>
+                    <li>Beautiful translucent design with a subtle border.</li>
+                    <li>Live Updates: Updates every second directly on your home screen.</li>
+                    <li><strong>Responsive Layouts:</strong>
+                        <ul>
+                            <li>Compact Mode: Shows only progress bars when resized to small heights.</li>
+                            <li>Title Mode: Shows Title and Progress Bar when resized to small widths.</li>
+                            <li>Full Mode: Shows Title, Progress Bar, and Remaining Time.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><strong>Milestone Notifications:</strong>
+                <ul>
+                    <li>50% Completed: High-priority alert when half the time is gone.</li>
+                    <li>90% Completed: Alert when only 10% of the time remains.</li>
+                    <li>100% Completed: Final completion notification.</li>
+                </ul>
+            </li>
+            <li><strong>Pinned Notifications:</strong> "Pin" any timer to see its live progress and remaining time in
+                your system notification tray.</li>
+            <li><strong>Intelligent Formatting:</strong>
+                <ul>
+                    <li>12-hour time picker with AM/PM support.</li>
+                    <li>Dynamic countdown labels (hides hours/minutes when they reach zero).</li>
+                </ul>
+            </li>
+            <li><strong>Persistent Storage:</strong> Uses Android DataStore and Kotlin Serialization to ensure your
+                timers are never lost, even after a device reboot.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
