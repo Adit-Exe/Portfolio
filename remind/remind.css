@@ -101,7 +101,7 @@ button:active,
 
     img {
         width: max-content;
-        height: 300px;
+        height: 500px;
         box-shadow: none;
         border-radius: 10px;
     }
@@ -175,7 +175,8 @@ button:active,
         flex-direction: column;
 
         img {
-            height: 200px;
+            height: auto;
+            width: 100%;
 
         }
     }
